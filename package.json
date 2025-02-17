@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.elab.timepercent",                              
+  "displayName": "Time Percent Interface",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "This tool allows to link action, sound, lerp and other concept to a relative percent time from one point to an other in aim to make NTP  looping game.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2025_02_17_TimePercentInterface.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
