@@ -38,13 +38,14 @@ public class PctTimeMono_LoopingSince1970 : MonoBehaviour
         m_secondsSince1970 = m_millisecondsSince1970 / 1000;
         m_relativeTimeInMilliseconds = m_millisecondsSince1970 % m_loopTimeInMilliseconds;
         m_onRelativeMillisecondsChanged.Invoke(m_relativeTimeInMilliseconds);
-        double percent = ((double)m_relativeTimeInMilliseconds) / ((double)m_loopTimeInMilliseconds);
+        m_relativePercent = ((double)m_relativeTimeInMilliseconds) / ((double)m_loopTimeInMilliseconds);
 
-        if (percent < previousPercent)
+
+        if (m_relativePercent < previousPercent)
         {
             m_onRestart.Invoke();
         }
-        m_onPercentChanged.Invoke(percent);
+        m_onPercentChanged.Invoke(m_relativePercent);
     }
 
     private long GetTimeNowUtcOffsetAsMilliseconds()
