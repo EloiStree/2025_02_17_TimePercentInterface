@@ -3,13 +3,15 @@ using UnityEngine.Events;
 
 public class PctTimeMono_RelayPercentValue : MonoBehaviour, I_PercentHandler
 {
-    [Range(0.0f,1.0f)]
+    [Range(0.0f, 1.0f)]
     public double m_lastPercentReceived;
-    public UnityEvent<double> m_onPercentRelayed;
+    public UnityEvent<double> m_onDoublePercentRelayed;
+    public UnityEvent<float> m_onFloatPercentRelayed;
     public void SetToRelativeMilliseconds(double percent)
     {
         m_lastPercentReceived = percent;
-        m_onPercentRelayed.Invoke(percent);
+        m_onDoublePercentRelayed.Invoke(percent);
+        m_onFloatPercentRelayed.Invoke((float)percent);
 
     }
 
