@@ -19,10 +19,10 @@ public class PctTimeMono_ScaleCurveToSize : MonoBehaviour, I_PercentHandler
     {
         if (m_useOnValiddate)
         {
-            SetToRelativeMilliseconds(m_percent);
+            SetToPercent(m_percent);
         }
     }
-    public void SetToRelativeMilliseconds(double percent)
+    public void SetToPercent(double percent)
     {
         m_percent = percent;
         if (m_whatToLocalScale == null)

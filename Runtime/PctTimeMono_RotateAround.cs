@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface I_PercentHandler
 {
-    void SetToRelativeMilliseconds(double percent);
+    void SetToPercent(double percent);
 }
 
 public class PctTimeMono_RotateAround : MonoBehaviour, I_PercentHandler
@@ -28,10 +28,10 @@ public class PctTimeMono_RotateAround : MonoBehaviour, I_PercentHandler
 
     public void OnValidate()
     {
-        SetToRelativeMilliseconds(m_percent);
+        SetToPercent(m_percent);
     }
 
-    public void SetToRelativeMilliseconds(double percent)
+    public void SetToPercent(double percent)
     {
         m_percent = percent;
         if (m_whatToMove == null)

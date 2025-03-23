@@ -19,7 +19,7 @@ public class PctTimeMono_ColorTransition : MonoBehaviour, I_PercentHandler
         public Color m_colorAtThatPoint = new Color(1, 1, 1, 1);
     }
 
-    public void SetToRelativeMilliseconds(double givenPercent) // Changed from double to float
+    public void SetToPercent(double givenPercent) // Changed from double to float
     {
         float percent = (float)givenPercent;
         m_percent = percent;

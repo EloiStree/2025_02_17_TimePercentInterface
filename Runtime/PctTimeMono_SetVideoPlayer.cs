@@ -23,7 +23,7 @@ public class PctTimeMono_SetVideoPlayer : MonoBehaviour, I_PercentHandler
         m_videoPlayer.Prepare();
     }
 
-    public void SetToRelativeMilliseconds(double percent)
+    public void SetToPercent(double percent)
     {
         m_givenPercent = percent;
         if (m_videoPlayer == null)

@@ -26,7 +26,7 @@ public class PctTimeMono_SetAudioSource : MonoBehaviour, I_PercentHandler
         }
     }
 
-    public void SetToRelativeMilliseconds(double percent)
+    public void SetToPercent(double percent)
     {
         m_givenPercent = percent;
         if (m_audioSource == null || m_audioSource.clip == null)

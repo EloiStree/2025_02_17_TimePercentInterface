@@ -35,7 +35,7 @@ public class PctTimeMono_BroadcastPercentToChildren: MonoBehaviour, I_PercentHan
         m_handlers = handlers.Distinct<I_PercentHandler>().ToList();
     }
 
-    public void SetToRelativeMilliseconds(double percent)
+    public void SetToPercent(double percent)
     {
         if (Application.isPlaying == false)
         {
@@ -48,7 +48,7 @@ public class PctTimeMono_BroadcastPercentToChildren: MonoBehaviour, I_PercentHan
             {
                 continue;
             }
-            h.SetToRelativeMilliseconds(percent);
+            h.SetToPercent(percent);
         }
     }
 }

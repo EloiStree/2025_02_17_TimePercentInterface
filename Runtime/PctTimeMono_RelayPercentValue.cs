@@ -7,7 +7,12 @@ public class PctTimeMono_RelayPercentValue : MonoBehaviour, I_PercentHandler
     public double m_lastPercentReceived;
     public UnityEvent<double> m_onDoublePercentRelayed;
     public UnityEvent<float> m_onFloatPercentRelayed;
-    public void SetToRelativeMilliseconds(double percent)
+
+    public void SetToPercent(float percent)
+    {
+        SetToPercent((double)percent);
+    }
+    public void SetToPercent(double percent)
     {
         m_lastPercentReceived = percent;
         m_onDoublePercentRelayed.Invoke(percent);
@@ -20,12 +25,12 @@ public class PctTimeMono_RelayPercentValue : MonoBehaviour, I_PercentHandler
     {
         if (m_useOnValidate)
         {
-            SetToRelativeMilliseconds(m_lastPercentReceived);
+            SetToPercent(m_lastPercentReceived);
         }
     }
     [ContextMenu("Push Current Value")]
     public void PushCurrentInspectorValue()
     {
-        SetToRelativeMilliseconds(m_lastPercentReceived);
+        SetToPercent(m_lastPercentReceived);
     }
 }
