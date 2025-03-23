@@ -8,8 +8,14 @@
   "description": "This tool allows to link action, sound, lerp and other concept to a relative percent time from one point to an other in aim to make NTP  looping game.",                         
   "keywords": ["Script","Tool"],                       
   "dependencies":{},     
-  "relatedPackages":{},     
-  "samples" : [],     
+  "relatedPackages":{},         
+  "samples": [
+    {
+      "displayName": "Demo Scene",
+      "description": "Demo on how to use the package",
+      "path": "Scene/Demo"
+    }
+  ] ,     
   "author" : {
 "name":"Eloi Stree",
 "mail":"",
