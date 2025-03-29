@@ -55,11 +55,11 @@ public class PctTimeMono_LoopingSince1970 : MonoBehaviour
         m_onArriving.Invoke();
     }
 
-    public void SetNtpOffsetToTimer(long offset)
+    public void SetNtpOffsetMillisecondsToTimer(long offset)
     {
         m_ntpOffsetMilliseconds = offset;
     }
-    public void SetStartOffsetAdjustement(long startOffsetAdjustement)
+    public void SetStartOffsetMillisecondsAdjustement(long startOffsetAdjustement)
     {
         m_startOffsetAdjustementInMilliseconds = startOffsetAdjustement;
     }
