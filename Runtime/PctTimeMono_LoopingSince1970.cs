@@ -30,6 +30,17 @@ public class PctTimeMono_LoopingSince1970 : MonoBehaviour
     public UnityEvent m_onArriving;
     public UnityEvent m_onRestart;
 
+    [ContextMenu("Set to 1 Mintues")]
+    public void SetToOneMinute() => m_loopTimeInMilliseconds =   60 * 1000;
+
+
+    [ContextMenu("Set to 5 Mintues")]
+    public void SetTo5Minutes() => m_loopTimeInMilliseconds = 5 * 60 * 1000;
+
+
+    [ContextMenu("Set to 22 Mintues")]
+    public void SetTo22Minutes() => m_loopTimeInMilliseconds = 22 * 60 * 1000;
+
 
     public void GetCurrentNtpSeconds(out long seconds)
     {
