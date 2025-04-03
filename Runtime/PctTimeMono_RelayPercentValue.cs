@@ -1,7 +1,13 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PctTimeMono_RelayPercentValue : MonoBehaviour, I_PercentHandler
+
+namespace Eloi.TimeSync
+{
+
+
+    public class PctTimeMono_RelayPercentValue : MonoBehaviour, I_PercentHandler
 {
     [Range(0.0f, 1.0f)]
     public double m_lastPercentReceived;
@@ -33,4 +39,6 @@ public class PctTimeMono_RelayPercentValue : MonoBehaviour, I_PercentHandler
     {
         SetToPercent(m_lastPercentReceived);
     }
+}
+
 }
