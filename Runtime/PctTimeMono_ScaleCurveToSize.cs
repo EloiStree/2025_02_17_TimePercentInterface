@@ -1,7 +1,9 @@
 using UnityEngine;
 using UnityEngine.Events;
+namespace Eloi.TimeSync
+{
 
-public class PctTimeMono_ScaleCurveToSize : MonoBehaviour, I_PercentHandler
+    public class PctTimeMono_ScaleCurveToSize : MonoBehaviour, I_PercentHandler
 {
     public Transform m_whatToLocalScale;
     public float m_multiplicator = 1;
@@ -31,4 +33,5 @@ public class PctTimeMono_ScaleCurveToSize : MonoBehaviour, I_PercentHandler
         }
         m_whatToLocalScale.localScale = Vector3.one * m_scaleCurve.Evaluate((float)percent) * m_multiplicator;
     }
+}
 }

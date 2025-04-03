@@ -1,8 +1,10 @@
 using System;
 using UnityEngine;
 
+namespace Eloi.TimeSync
+{
 
-public interface I_PercentHandler
+    public interface I_PercentHandler
 {
     void SetToPercent(double percent);
 }
@@ -44,4 +46,5 @@ public class PctTimeMono_RotateAround : MonoBehaviour, I_PercentHandler
         m_whatToMove.localPosition = new Vector3((float)x, 0, (float)z);
 
     }
+}
 }

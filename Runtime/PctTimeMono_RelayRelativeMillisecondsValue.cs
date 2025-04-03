@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+namespace Eloi.TimeSync
+{
 
-public class PctTimeMono_RelayRelativeMillisecondsValue : MonoBehaviour
+    public class PctTimeMono_RelayRelativeMillisecondsValue : MonoBehaviour
 {
     public long m_lastRelativeMilliseconds;
     public UnityEvent<long> m_onRelativeMillisecondsRelayed;
@@ -33,4 +35,5 @@ public class PctTimeMono_RelayRelativeMillisecondsValue : MonoBehaviour
     {
         SetToRelativeMilliseconds(m_lastRelativeMilliseconds);
     }
+}
 }

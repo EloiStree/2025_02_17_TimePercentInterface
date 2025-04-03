@@ -1,7 +1,9 @@
 using UnityEngine;
 using UnityEngine.Events;
+namespace Eloi.TimeSync
+{
 
-public class UIPctTimeMono_PercentState : MonoBehaviour
+    public class UIPctTimeMono_PercentState : MonoBehaviour
 {
     [Range(0,1)]
     public float m_lastPercent;
@@ -27,4 +29,5 @@ public class UIPctTimeMono_PercentState : MonoBehaviour
 
         }
     }
+}
 }

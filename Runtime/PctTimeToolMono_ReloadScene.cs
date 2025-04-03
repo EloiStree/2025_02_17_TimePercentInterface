@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
+namespace Eloi.TimeSync
+{
 
-public class PctTimeToolMono_ReloadScene : MonoBehaviour
+    public class PctTimeToolMono_ReloadScene : MonoBehaviour
 {
 
     public bool m_useSceneName;
@@ -32,4 +34,5 @@ public class PctTimeToolMono_ReloadScene : MonoBehaviour
         }
         
     }
+}
 }

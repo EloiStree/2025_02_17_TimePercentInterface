@@ -1,6 +1,8 @@
 using UnityEngine;
+namespace Eloi.TimeSync
+{
 
-public class PctTimeToolMono_SetColorToRenderer : MonoBehaviour
+    public class PctTimeToolMono_SetColorToRenderer : MonoBehaviour
 {
 
     public Renderer[] m_rendererToAffect;
@@ -23,4 +25,5 @@ public class PctTimeToolMono_SetColorToRenderer : MonoBehaviour
             material.color = color;
         }
     }
+}
 }

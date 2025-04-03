@@ -1,7 +1,9 @@
 ﻿using System;
 using UnityEngine;
+namespace Eloi.TimeSync
+{
 
-public class PctTimeMono_SetVideoPlayer : MonoBehaviour, I_PercentHandler
+    public class PctTimeMono_SetVideoPlayer : MonoBehaviour, I_PercentHandler
 {
 
     public long m_frameAdjustementRange = 50;
@@ -41,4 +43,5 @@ public class PctTimeMono_SetVideoPlayer : MonoBehaviour, I_PercentHandler
             m_videoPlayer.Play();
         }
     }
+}
 }

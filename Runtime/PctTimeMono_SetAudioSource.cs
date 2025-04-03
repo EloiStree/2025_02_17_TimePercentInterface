@@ -1,7 +1,9 @@
 ﻿using System;
 using UnityEngine;
+namespace Eloi.TimeSync
+{
 
-public class PctTimeMono_SetAudioSource : MonoBehaviour, I_PercentHandler
+    public class PctTimeMono_SetAudioSource : MonoBehaviour, I_PercentHandler
 {
     public AudioSource m_audioSource;
     public float m_outOfRangeInSeconds = 0.1f;
@@ -44,4 +46,5 @@ public class PctTimeMono_SetAudioSource : MonoBehaviour, I_PercentHandler
             m_audioSource.Play();
         }
     }
+}
 }

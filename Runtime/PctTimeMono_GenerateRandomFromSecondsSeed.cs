@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+namespace Eloi.TimeSync
+{
 
-public class PctTimeMono_GenerateRandomFromSecondsSeed : MonoBehaviour
+    public class PctTimeMono_GenerateRandomFromSecondsSeed : MonoBehaviour
 {
     public long randomFromSeed;
     public int m_currentSeconds;
@@ -64,4 +66,5 @@ public class PctTimeMono_GenerateRandomFromSecondsSeed : MonoBehaviour
 
         }
     }
+}
 }

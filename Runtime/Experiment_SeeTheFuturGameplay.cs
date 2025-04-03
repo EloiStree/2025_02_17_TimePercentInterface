@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
+namespace Eloi.TimeSync { 
+
 
 public class Experiment_SeeTheFuturGameplay : MonoBehaviour
 {
@@ -32,4 +34,5 @@ public class Experiment_SeeTheFuturGameplay : MonoBehaviour
         }
 
     }
+}
 }

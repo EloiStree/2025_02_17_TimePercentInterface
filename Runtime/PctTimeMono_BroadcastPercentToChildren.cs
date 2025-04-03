@@ -3,8 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+namespace Eloi.TimeSync
+{
 
-public class PctTimeMono_BroadcastPercentToChildren: MonoBehaviour, I_PercentHandler
+    public class PctTimeMono_BroadcastPercentToChildren: MonoBehaviour, I_PercentHandler
 {
     [Range(0f,1f)]
     public double m_lastPercentReceived;
@@ -51,4 +53,5 @@ public class PctTimeMono_BroadcastPercentToChildren: MonoBehaviour, I_PercentHan
             h.SetToPercent(percent);
         }
     }
+}
 }

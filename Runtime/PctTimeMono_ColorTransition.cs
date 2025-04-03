@@ -2,8 +2,10 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+namespace Eloi.TimeSync
+{
 
-public class PctTimeMono_ColorTransition : MonoBehaviour, I_PercentHandler
+    public class PctTimeMono_ColorTransition : MonoBehaviour, I_PercentHandler
 {
     [Range(0, 1)]
     public float m_percent = 0f; // Changed to float for consistency
@@ -69,4 +71,5 @@ public class PctTimeMono_ColorTransition : MonoBehaviour, I_PercentHandler
             }
         }
     }
+}
 }

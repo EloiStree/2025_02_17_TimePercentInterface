@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+namespace Eloi.TimeSync
+{
 
-public class UIPctTimeMono_NtpOffset : MonoBehaviour
+    public class UIPctTimeMono_NtpOffset : MonoBehaviour
 {
     public string m_textFormat = "{0}";
     public UnityEvent<long> m_onMillisecondsLongRelayed;
@@ -13,4 +15,5 @@ public class UIPctTimeMono_NtpOffset : MonoBehaviour
         m_onMillisecondsLongRelayed.Invoke(offsetInMilliseconds);
         m_onMillisecondsTextRelayed.Invoke(string.Format(m_textFormat, offsetInMilliseconds));
     }
+}
 }

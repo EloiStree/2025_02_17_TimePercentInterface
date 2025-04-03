@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+namespace Eloi.TimeSync
+{
 
-public class UIPctTimeMono_RelativeMillisecondsState : MonoBehaviour
+    public class UIPctTimeMono_RelativeMillisecondsState : MonoBehaviour
 {
 
     public string m_textFormat = "{H}:{M}:{S},{MS}";
@@ -21,4 +23,5 @@ public class UIPctTimeMono_RelativeMillisecondsState : MonoBehaviour
         t = t.Replace("{MS}", milliseconds.ToString("D3"));
         m_onTextRelayed.Invoke(t);
     }
+}
 }

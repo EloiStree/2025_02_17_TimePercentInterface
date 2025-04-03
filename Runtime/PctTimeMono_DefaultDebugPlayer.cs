@@ -1,7 +1,9 @@
 using UnityEngine;
 using UnityEngine.Events;
+namespace Eloi.TimeSync
+{
 
-public class PctTimeMono_GameTimeInSecondsToPercent : MonoBehaviour
+    public class PctTimeMono_GameTimeInSecondsToPercent : MonoBehaviour
 {
     public UnityEvent<double> m_onPercentChanged;
     public double m_secondsToComplete = 30f;
@@ -14,4 +16,5 @@ public class PctTimeMono_GameTimeInSecondsToPercent : MonoBehaviour
         m_currentPercent = (float)percent;
         m_onPercentChanged.Invoke(percent);
     }
+}
 }

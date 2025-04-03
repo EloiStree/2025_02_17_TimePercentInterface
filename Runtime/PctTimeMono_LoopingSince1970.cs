@@ -3,8 +3,10 @@ using UnityEngine;
 using UnityEngine.Events;
 
 
+namespace Eloi.TimeSync
+{
 
-public class PctTimeMono_LoopingSince1970 : MonoBehaviour
+    public class PctTimeMono_LoopingSince1970 : MonoBehaviour
 {
 
 
@@ -108,4 +110,5 @@ public class PctTimeMono_LoopingSince1970 : MonoBehaviour
         long start = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).Ticks / TimeSpan.TicksPerMillisecond;
         return (now - start) + (m_ntpOffsetMilliseconds+ m_startOffsetAdjustementInMilliseconds);
     }
+}
 }
